@@ -1,7 +1,17 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./components/header.scss";
+@import "./components/main-content.scss";
+@import "./components/form.scss";
+@import "./components/thanks-page.scss";
 
 body {
-  background: $c-gray;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.thanks-page {
+  display: none;
 }

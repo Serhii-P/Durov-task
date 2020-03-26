@@ -5,10 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello </h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <div class="thanks-page" id="thanks-page">
+      <h1 class="thanks-page__title">Ваш личный аккаунт создан!</h1>
+      <h4 class="thanks-page__text">Осталось всего несколько шагов до вашего заработка… </h4>
+      <p class="thanks-page__instuction">
+        firstname, вы успешно прошли регистрацию! Чтобы начать использовать все технологии нашей платформы, вам осталось:
+        <br><br>
+        1. Дождаться звонка нашего консультанта и получить от него все инструкции:
+        как пользоваться кабинетом и выводить прибыль удобным для вас способом
+        <br><br>
+        2. Внести желаемую сумму на счет для запуска автоматической торговли платформой
+        <br><br>
+        3. Начать онлайн-торговлю и получить свой первый заработок!
+      </p>
+      <button class="thanks-page__button">Перейти в личный кабинет</button>
+    </div>
+    <header class="header" id="header">
+      <img class="header-background__planes origami-1" src="./images/origami-1.png" alt="Background planes">
+      <img class="header-background__planes origami-2" src="./images/origami-2.png" alt="Background planes">
+      <img class="header-background__planes origami-3" src="./images/origami-3.png" alt="Background planes">
+      <img class="header-background__planes origami-4" src="./images/origami-4.png" alt="Background planes">
+      <img class="header-background__planes origami-5" src="./images/origami-5.png" alt="Background planes">
+      <img class="header-background__planes origami-6" src="./images/origami-6.png" alt="Background planes">
+      <img class="header-background__planes origami-7" src="./images/origami-7.png" alt="Background planes">
+      <div class="header-top">
+      <div class="header-logo">
+        <a href="#">
+          <img class ="telegram-logo" src="./images/logo.png" alt="Telegram logo">
+        </a>
+      </div>
+      <div class="header-counter">
+        <p class="header-counter__text">Сейчас проходят регистрацию</p>
+        <div class="header-number">
+          <span class="header-number__registration">
+            <span class="header-number__registration-quantity">108</span>
+          человек
+        </span>
+        </div>
+      </div>
+      </div>
+      <div class="header-content">
+        <div class="header-content__info">
+          <h1 class="header-content__title">Запустите ваш онлайн-заработок в режиме автопилота</h1>
+          <p class="header-content__text">Революционная программа, на основе искусственного интеллекта от Павла и Николая Дуровых</p>
+          <button class="header-content__button">Узнать условия заработка </button>
+        </div>
+        <div class="header-content__screen">
+          <img src="./images/media-screen.png" alt="Media-screen">
+          <button class="header-content__button extra-button" id="extra-button" >Узнать условия заработка </button>
+        </div>
+      </div>
+
+      <div class="wave"></div>
+    </header>
+    <main class="main" id="main">
+      <img class="spots" src="./images/spots.png" alt="Spots">
+
+      <div class="main-content">
+        <div class="main-content__info growth">
+          <img class="growth-image" src="./images/growth-icon.png" alt="Growth icon">
+          <div class="main-content__block">
+            <p class="growth-text">Стабильный пассивный заработок на основе инновационного метода</p>
+            <hr class="main-content__dash">
+          </div>
+        </div>
+
+        <div class="main-content__info card">
+          <img class="card-image" src="./images/cards-icon.png" alt="Cards icon">
+          <div class="main-content__block">
+            <p class="card-text">Умножайте капитал и выводи деньги на карту любого банка России</p>
+            <hr class="main-content__dash">
+          </div>
+        </div>
+
+        <div class="main-content__info experience">
+          <img class="experience-image" src="./images/experience-icon.png" alt="Experience icon">
+          <div class="main-content__block">
+            <p class="experience-text">Без необходимости иметь специальные умения в трейдинге</p>
+            <hr class="main-content__dash">
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h2 class="form-title">Получить доступ к платформе</h2>
+        <form id="modal-form">
+          <div class="modal-field">
+            <input class="foo" type="text" autocomplete="off"  placeholder="Имя" required>
+          </div>
+          <div class="modal-field">
+            <input type="text" autocomplete="off" placeholder="Фамилия" required>
+          </div>
+          <div class="modal-field">
+            <input type="email" placeholder="E-mail" required>
+          </div>
+          <div class="modal-field">
+            <input type="number" autocomplete="off" placeholder="Номер телефона" required>
+          </div>
+          <div class="modal-check">
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input type="checkbox" checked="checked">
+                <span class="checkbox-custom"></span>
+              </label>
+              <div class="checkbox-text">Я согласен с Пользовательским соглашением</div>
+            </div>
+
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+              </label>
+              <div class="checkbox-text">Я согласен на обработку персональных данных</div>
+            </div>
+          </div>
+          <button class="modal-button" id="modal-button" type="submit">Подключиться</button>
+        </form>
+      </div>
+    </main>
+    <!-- <script type="text/javascript" src="scripts/main.js"> -->
+    <script >
+      var form = document.getElementById('modal-form');
+
+      form.addEventListener("submit", function(event) {
+        document.getElementById('header').style.display = 'none';
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('thanks-page').style.display = 'block';
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,137 @@
+.form {
+  border: 6px solid #fbfbfb;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 37px 38px 33px;
+  z-index: 5;
+
+  &-title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 26px;
+  }
+}
+
+.modal-field {
+  margin-bottom: 20px;
+}
+
+.modal-field input {
+  width: 381px;
+  height: 64px;
+  background: #87c9ec;
+  border: 3px solid #bce1f6;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 45px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.checkbox-text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 35px;
+  color: #fff;
+}
+
+.modal-check {
+  margin: 29px 0 38px;
+}
+
+.modal-button {
+  width: 381px;
+  height: 64px;
+  left: 10px;
+  top: 10px;
+  background: linear-gradient(90deg, #12fff7 0%, #28e17e 100%);
+  border-radius: 15px;
+  border: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+
+  &:hover {
+    background: linear-gradient(-17deg, #12fff7 0%, #28e17e 100%);
+    color: #2a2973;
+    transition: all 0.5s;
+  }
+
+  &:active {
+    transform: translateY(5px);
+  }
+}
+
+.checkbox-container {
+  margin-bottom: 18px;
+}
+
+.checkbox-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  display: none;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: -6px;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease-out;
+  // -webkit-transition: all 0.3s ease-out;
+  // -moz-transition: all 0.3s ease-out;
+  // -ms-transition: all 0.3s ease-out;
+  // -o-transition: all 0.3s ease-out;
+  border: 3px solid #fff;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 344px;
+    padding: 10px 6px 33px 18px;
+
+    &-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .modal-field input {
+    width: 303px;
+  }
+
+  .modal-button {
+    width: 303px;
+    font-size: 14px;
+  }
+
+  .checkbox-text {
+    font-size: 10px;
+  }
+}
