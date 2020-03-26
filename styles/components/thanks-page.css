@@ -1,0 +1,83 @@
+.thanks-page {
+  width: 750px;
+  height: 515px;
+  background: #bce1f6;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 50px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .thanks-page__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 29px; }
+  .thanks-page__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 10px; }
+  .thanks-page__instuction {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 48px 0;
+    text-align: start;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto; }
+  .thanks-page__button {
+    width: 291px;
+    height: 56px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    cursor: pointer;
+    outline: none;
+    background: -webkit-gradient(linear, left top, right top, from(#12fff7), color-stop(169.24%, #28e17e));
+    background: linear-gradient(90deg, #12fff7 0%, #28e17e 169.24%);
+    border-radius: 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .thanks-page__button:hover {
+      background: linear-gradient(-17deg, #12fff7 0%, #28e17e 100%);
+      color: #2a2973;
+      font-size: 17px; }
+    .thanks-page__button:active {
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px); }
+
+@media screen and (max-width: 800px) {
+  .thanks-page {
+    width: 500px; }
+    .thanks-page__instuction {
+      width: 80%;
+      margin: 28px auto; } }
+
+@media screen and (max-width: 500px) {
+  .thanks-page {
+    width: 344px;
+    height: 466px;
+    padding-top: 38px; }
+    .thanks-page__instuction {
+      width: 82%;
+      margin: 33px auto;
+      font-size: 12px;
+      line-height: 13px; }
+    .thanks-page__title {
+      font-size: 19px;
+      line-height: 22px; }
+    .thanks-page__text {
+      font-size: 11px;
+      line-height: 12px;
+      width: 90%;
+      margin: auto; } }
+
+/*# sourceMappingURL=thanks-page.css.map */
