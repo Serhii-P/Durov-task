@@ -132,7 +132,7 @@
               transform: translateY(5px); }
 
 .wave {
-  background-image: url("../../images/waves.svg");
+  background-image: url("./../images/waves.svg");
   overflow: hidden;
   height: 151px;
   margin-bottom: 0; }
