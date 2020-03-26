@@ -444,6 +444,7 @@
 .checkbox-label .checkbox-custom {
   position: absolute;
   top: -5px;
+  -moz-top: 8px;
   height: 20px;
   width: 20px;
   -webkit-transition: all 0.3s ease-out;
