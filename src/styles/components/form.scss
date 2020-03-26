@@ -2,8 +2,10 @@
   border: 6px solid #fbfbfb;
   box-sizing: border-box;
   border-radius: 15px;
-  padding: 37px 38px 33px;
+  padding: 18px 31px 0;
   z-index: 5;
+  width: 457px;
+  height: 638px;
 
   &-title {
     font-family: Montserrat, sans-serif;
@@ -50,7 +52,7 @@
 }
 
 .modal-check {
-  margin: 29px 0 38px;
+  margin: 22px 0 33px;
 }
 
 .modal-button {
@@ -96,7 +98,8 @@
 
 .checkbox-label .checkbox-custom {
   position: absolute;
-  top: -6px;
+  top: -5px;
+  // top: 8px;
   height: 20px;
   width: 20px;
   transition: all 0.3s ease-out;
